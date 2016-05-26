@@ -1,0 +1,116 @@
+.list1 li{
+    display: inline;
+}
+.header{
+    background:linear-gradient(red,#333333);
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-bottom-color: #265a88;
+    border-width: 1px;
+    border-style: solid;
+
+}
+#head{
+    font-size: 20px;
+    color:#ffffff;
+    cursor: pointer;
+}
+
+body{
+    background-color: #000000;
+}
+
+#navigate ul li a {
+text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 3%;
+}
+#navigate ul li a:hover{
+    color:#428BCA;
+}
+#container{
+    width: 60%;
+    background-color: #000000;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+#container-div{
+    width: 60%;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#one{
+display:none;
+    padding-top:5% ;padding-bottom : 5%;
+}
+#two{
+    display: none;
+    padding-top:5% ;padding-bottom : 5%;
+}
+.nav-tabs.nav-justified > li > a{
+    border-bottom: none;
+}
+
+.carousel-inner{
+    margin-left: auto;
+    margin-right: auto;
+}
+#myCarousel{
+    width:65%;
+
+}
+
+#name,#email,#date-phone,#time-size{
+    width:80%
+}
+#pwd{
+    width: 40%;
+}
+#time-size{
+    margin-top: 2%;
+}
+
+@media (max-width:770px){
+
+    #myCarousel{
+        width:100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.btn{
+    margin-top: 5%;
+}
+
+
+.btn:hover{}
+
+.seats.img-rounded,.seats.img-circle{
+    background-color: grey;
+    width: 50%;
+    cursor: pointer;
+}
+#head-book,.seats.img-circle{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.seats.img-rounded:hover ,.seats.img-circle:hover{
+    background-color: #31708f;
+}
+#tab_head{
+    background:linear-gradient(black,#333333);
+    color: white;
+}
+.test:hover{
+    cursor: pointer;
+}

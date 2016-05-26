@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Mirchi Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="jquery-1.11.1.min.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="head"> <div class="col-sm-8"><span class="glyphicon glyphicon-fire"></span> Welcome to the Restaurant</div></div>
+                <div id ="navigate" class="col-sm-4"><ul class=" list1" >
+                    <li id = "home" onclick=butt(id)><a href="bootstrap.html"> <span class="glyphicon glyphicon-home"></span>&nbsp;home</a></li>&nbsp;
+
+                </ul></div></div>
+
+        </div>
+    </div>
+    </div>
+</head>
+
+<body>
+<div id="container">
+    <ul class="nav nav-tabs nav-justified">
+
+        <li class="active" id="but3" onclick=res(id)><a href="#" data-toggle="tab"><span class="glyphicon glyphicon-check"></span>Reservations</a>
+        </li>
+        <li class="" id="but2" onclick=res(id)><a href="#" data-toggle="tab"><span class="glyphicon glyphicon-glass"></span>Seatings</a>
+        </li>
+    </ul>
+
+</div>
+<div id ="three" class="active">
+<div class="container" id="container-div">
+
+       <div id="tab_head"> <h2>Reservations</h2>
+        <p>Click on your name to see the details </p></div>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Booking ID</th>
+                <th>Date and Time</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="test" onclick="res(className)">
+                <td>John</td>
+                <td>1</td>
+                <td>1/6/2014 12:00AM</td>
+                <td><button onclick=cancel()>cancel Reservation</button></td>
+            </tr>
+            <tr class="test" onclick="res(className)">
+                <td>Mary</td>
+                <td>2</td>
+                <td>1/6/2014 8:00PM</td>
+                <td><button onclick=cancel()>cancel Reservation</button></td>
+            </tr>
+            <tr class="test" onclick="res(className)">
+                <td>July</td>
+                <td>3</td>
+                <td>1/6/2014 1:00PM</td>
+                <td><button onclick=cancel()>cancel Reservation</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id ="two" class="">
+    <div class="col-sm-12">
+        <div class="container">
+            <div  id = "head-book" class="col-md-12"><h2>Please select the table you want to Reserve</h2></div>
+            <div class="col-md-4">
+                <div  id = "t1" class="seats img-rounded" onclick="book(id)">
+                    <p>Table 1</p>
+                    <p>Click to Reserve </p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id = "t2" class="seats img-rounded" onclick="book(id)">
+                    <p>Table 2</p>
+                    <p>Click to Reserve </p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id = "t3" class="seats img-rounded" onclick="book(id)">
+                    <p>Table 3</p>
+                    <p>Click to Reserve </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-sm-12">
+        <div class="container">
+            <div class="col-md-4">
+                <div  id = "t7" class="seats img-circle" onclick="book(id)">
+                    <p>Table 7</p>
+                    <p>Click to Reserve </p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id = "t8" class="seats img-circle" onclick="book(id)">
+                    <p>Table 8</p>
+                    <p>Click to Reserve </p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id = "t9" class="seats img-circle" onclick="book(id)">
+                    <p>Table 9</p>
+                    <p>Click to Reserve </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="col-sm-12">
+        <div class="container">
+            <div class="col-md-4">
+                <div id = "t4" class="seats img-rounded" onclick="book(id)">
+                    <p>Table 4</p>
+                    <p>Occupied</p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id = "t5"class="seats img-rounded" onclick="book(id)">
+                    <p>Table 5</p>
+                    <p>Click to Reserve </p>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id = "t6" class="seats img-rounded" onclick="book(id)">
+                    <p>Table 6</p>
+                    <p>Click to Reserve </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

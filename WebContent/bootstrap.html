@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Mirchi Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="bootstrap.css" rel="stylesheet" type="text/css">
+   
+<div class="header">
+    <div class="container-fluid">
+        <div class="row">
+           <div id="head"> <div class="col-sm-8"><span class="glyphicon glyphicon-fire"></span> Welcome to the Restaurant</div></div>
+           <div id ="navigate" class="col-sm-4"><ul class=" list1" >
+            <li id = "home" onclick=butt(id)><a> <span class="glyphicon glyphicon-home"></span>&nbsp;home</a></li>&nbsp;
+                <li id = "lon-but" onclick=butt(id)><a><span class="glyphicon glyphicon-off"></span>&nbsp;login</a></li>
+        </ul></div></div>
+
+        </div>
+    </div>
+</div>
+</head>
+<body>
+<div><button onclick=ajaxTest()>Click me</button></div>
+<div id="container">
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active" id="but3" onclick=butt(id)><a href="#" data-toggle="tab"><span class="glyphicon glyphicon-home">Home</a>
+        </li>
+        <li class="" id="but2"onclick=butt(id)><a href="#" data-toggle="tab"><span class="glyphicon glyphicon-user">Owner</a>
+        </li>
+        <li class="" id="but1"onclick=butt(id)><a href="#" data-toggle="tab"><span class="glyphicon glyphicon-cutlery"></span>Guest</a>
+        </li>
+    </ul>
+
+        </div>
+
+<div class="container" id="container-div">
+    <div id="one" class="">
+        <div class="form-group">
+            <label for="name"><span class="glyphicon glyphicon-info-sign"></span>Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-group">
+        <label for="email"><span class="glyphicon glyphicon-envelope"></span>Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+        <form id = "date-phone" role="form">
+            <div class="row">
+            <div class="col-sm-6">
+            <div class="form-group">
+            <label for="phone"><span class="glyphicon glyphicon-phone-alt"></span>Phone</label>
+            <input type="phone" class="form-control" id="phone" placeholder="Phone Number" required>
+        </div></div>
+            <div class="col-sm-6">
+            <div id = "date-div" class="form-group">
+            <label for="date"><span class="glyphicon glyphicon-calendar"></span>Date</label>
+            <input type="date" class="form-control" id="date" placeholder="Enter Date" required>
+        </div></div></div>
+
+
+        <div id = "time-size" role="form">
+            <div class="row">
+            <div class="col-sm-6">
+            <div id="grp-div" class="form-group">
+            <label for="number"><span class="glyphicon glyphicon-glass"></span>Group</label>
+            <input type="number" class="form-control" id="number" placeholder="Number of people">
+        </div></div>
+            <div class="col-sm-6">
+            <div id="time-div" class="form-group">
+                <label for="time"><span class="glyphicon glyphicon-time"></span>Time</label>
+                <input type="time" class="form-control" id="time" placeholder="HH:MM" required>
+            </div></div></div>
+            <button type = "submit" class="btn btn-default">Submit</button>&nbsp;&nbsp;</div>
+        </form>
+
+<div>
+<input  class="form-control" type ="text" id ="personid">
+<button class="btn btn-default" id ="getone">Get one</button></div>
+<div id = "viewhere">
+</div>
+        <button class="btn btn-default" onclick="location.href ='login.html';">Change Reservation</button>&nbsp;&nbsp;
+        <button class="btn btn-default" onclick="location.href ='login.html';">View Reservation</button>
+
+    </div>
+<div id="two"><form role="form">
+    <div class="form-group">
+        <label for="email"><span class="glyphicon glyphicon-envelope"></span>Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+        <label for="pwd"><span class="glyphicon glyphicon-lock"></span>Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+    </div>
+  <div>
+<button  class="btn btn-default" id = "getall">Get all</button>
+</div>
+
+</form>
+    <button class="btn btn-default" onclick="location.href ='login.html';">Submit</button>
+     <div id = "problem">
+
+    <p><a href="forget.html">Forgot Password?</a>&nbsp;&nbsp;
+        <a href="register.html">Register</a></p>
+
+</div>
+
+</div>
+
+    <div id="three" class="active">
+        <div id = "img" class="container">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img-2.jpg" alt="Chania" width="100%" height="100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="img-2.jpg" alt="Chania" width="100%" height="100%">
+                    </div>
+
+                    <div class="item">
+                        <img src="img-2.jpg" alt="Flower" width="100%" height="100px">
+                    </div>
+
+
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="welcome" class="container">
+        <p><h1>Welcome to the Hotel</h1><br>Please Do your Reservation <br> you can view previous reservation in guest area<br>
+        Admin needs to login</p>
+        </div>
+    </div>
+
+    </div>
+
+<script src = "http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="bootstrap.js"></script>
+</body>
+</html>
